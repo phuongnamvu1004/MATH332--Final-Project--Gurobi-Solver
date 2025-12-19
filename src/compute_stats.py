@@ -110,7 +110,7 @@ if __name__ == "__main__":
     default_csv = "../data/returns.csv"
 
     if Path(default_csv).exists():
-        assets, r, C = compute_stats(default_csv, p=0.8) # Example with p=0.9, no p defined will mean p=1.0 (equal weighting)
+        assets, r, C = compute_stats(default_csv, p=0.9) # Example with p=0.9, no p defined will mean p=1.0 (equal weighting)
         print("Loaded assets:", assets)
         print("-" * 40)
         
